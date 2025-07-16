@@ -1,5 +1,5 @@
 function login(username, password) {
-// Frontend auth logic
+// FIXED: handle spaces in username
+username = username.trim();
 return authenticateUser(username, password);
 }
-function logout() { clearSession(); }
